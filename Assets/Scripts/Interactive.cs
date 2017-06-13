@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Interactive : MonoBehaviour {
+	[HideInInspector]
     public NavMeshAgent playerAgent;
 	private bool hasInteracted;
 
