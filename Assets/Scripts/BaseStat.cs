@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseStat 
+public class BaseStat
 {
 	public List<StatBonus> BaseAdditives {get;set;}
 	public int BaseValue {get;set;}
@@ -28,7 +28,7 @@ public class BaseStat
 	}
 	public int GetCalculatedStat()
 	{
-		this.BaseAdditives.ForEach (x => this.FinalValue +=x.BonusValue);
+		this.BaseAdditives.ForEach (x => this.FinalValue += x.BonusValue);
 		FinalValue += BaseValue;
 		return FinalValue;
 	}
