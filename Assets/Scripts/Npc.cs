@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Npc : Interactive {
 	public string[] dialogue;
-	public string name;
+	public string Name;
 
     public override void Interact()
     {
