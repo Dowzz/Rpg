@@ -11,7 +11,7 @@ public class InventoryController : MonoBehaviour {
 		playerWeaponController = GetComponent<PlayerWeaponsController> ();
 		List<BaseStat> swordStats = new List<BaseStat> ();
 		swordStats.Add(new BaseStat(6, "Power", "Your power level !"));
-			Sword = new Item (swordStats, "Sword");
+			Sword = new Item (swordStats, "Staff");
 	}
 	void Update()
 	{
@@ -19,6 +19,7 @@ public class InventoryController : MonoBehaviour {
 		{
 			playerWeaponController.EquipWeapon (Sword);
 		}
+
 	}
 
 	
