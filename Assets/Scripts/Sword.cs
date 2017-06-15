@@ -22,9 +22,9 @@ public class Sword : MonoBehaviour, IWeapon	{
 	}
 	void OnTriggerEnter(Collider col)
 	{
-		if (col.tag == "Ennemy")
+		if (col.tag == "Enemy")
 		{
-
+            col.GetComponent<IEnemy>().TakeDamage(Stats[0].GetCalculatedStat());
 		}
 	}
 
