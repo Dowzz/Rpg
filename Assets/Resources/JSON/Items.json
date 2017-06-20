@@ -1,0 +1,26 @@
+[
+	{
+		"objectSlug" : "sword",
+		"itemName" : "Sword",
+		"description" : "A long sharp blade",
+		"actionName" : "Equip",
+		"itemModifier" : 0,
+		"stats" : [
+			{
+				"baseValue" : 2,
+				"statName" : "Power",
+			},
+			{
+				"baseValue" : 4,
+				"statName" : "Speed",
+			}
+		]
+	},
+	{
+		"objectSlug" : "PotionHealth",
+		"itemName" : "Health Potion",
+		"description" : "a potion that give HP",
+		"actionName" : "Drink",
+		"itemModifier" : 0
+	}
+]
