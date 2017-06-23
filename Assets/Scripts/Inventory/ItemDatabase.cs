@@ -8,7 +8,7 @@ public class ItemDatabase : MonoBehaviour {
     public List<Item> items { get; set; }
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         if (Instance != null && Instance != this)
             Destroy(gameObject);
         else
@@ -18,7 +18,6 @@ public class ItemDatabase : MonoBehaviour {
     public void BuildDatabase()
     {
         items = JsonConvert.DeserializeObject<List<Item>>(Resources.Load<TextAsset>("Json/items").ToString());
-        Debug.Log(items[0].Stats[0].StatName);
     }
     public Item GetItem(string itemSlug)
     {

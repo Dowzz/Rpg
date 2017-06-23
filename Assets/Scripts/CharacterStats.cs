@@ -9,7 +9,7 @@ public class CharacterStats : MonoBehaviour {
 	{
 		stats.Add(new BaseStat(4, "Power", "Your power level"));
 		stats.Add(new BaseStat(2, "Vitality", "Vitality level"));
-	}
+    }
 	public void AddStatBonus(List<BaseStat> statBonuses)
 	{
 		

@@ -1,26 +1,64 @@
 [
 	{
-		"objectSlug" : "sword",
-		"itemName" : "Sword",
-		"description" : "A long sharp blade",
+		"ObjectSlug" : "sword",
+		"ItemName" : "Sword",
+		"Description" : "A long sharp blade",
+		"ItemType" : "Weapon",
 		"actionName" : "Equip",
-		"itemModifier" : 0,
-		"stats" : [
+		"ItemModifier" : 0,
+		"Stats" : [
 			{
 				"baseValue" : 2,
-				"statName" : "Power",
+				"StatName" : "Power",
 			},
 			{
 				"baseValue" : 4,
-				"statName" : "Speed",
+				"StatName" : "vitality",
 			}
 		]
 	},
 	{
-		"objectSlug" : "PotionHealth",
-		"itemName" : "Health Potion",
-		"description" : "a potion that give HP",
+		"ObjectSlug" : "staff",
+		"ItemName" : "Staff",
+		"Description" : "A long plain staff",
+		"ItemType" : "Weapon",
+		"actionName" : "Equip",
+		"ItemModifier" : 0,
+		"Stats" : [
+			{
+				"baseValue" : 2,
+				"StatName" : "Power",
+			},
+			{
+				"baseValue" : 4,
+				"StatName" : "vitality",
+			}
+		]
+	},
+	{
+		"ObjectSlug" : "Hammer",
+		"ItemName" : "Hammer",
+		"Description" : "A big Hammer",
+		"ItemType" : "Weapon",
+		"actionName" : "Equip",
+		"ItemModifier" : 0,
+		"Stats" : [
+			{
+				"baseValue" : 5,
+				"StatName" : "Power",
+			},
+			{
+				"baseValue" : 6,
+				"StatName" : "vitality",
+			}
+		]
+	},
+	{
+		"ObjectSlug" : "PotionHealth",
+		"ItemName" : "Health Potion",
+		"Description" : "a potion that give HP",
+		"ItemType" : "Consumable",
 		"actionName" : "Drink",
-		"itemModifier" : 0
+		"ItemModifier" : 0
 	}
 ]

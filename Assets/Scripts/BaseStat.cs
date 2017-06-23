@@ -14,7 +14,7 @@ public class BaseStat
 	{
 		this.BaseAdditives = new List<StatBonus> ();
 		this.BaseValue = baseValue;
-		this.StatName = statName;
+		this.StatName = StatName;
 		this.StatDescription = statDescription;
 	}
 
@@ -23,7 +23,7 @@ public class BaseStat
     {
         this.BaseAdditives = new List<StatBonus>();
         this.BaseValue = baseValue;
-        this.StatName = statName;
+        this.StatName = StatName;
     }
 
     public void AddStatBonus(StatBonus statBonus)

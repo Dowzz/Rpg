@@ -8,6 +8,7 @@ public class Sword : MonoBehaviour, IWeapon	{
 
 	public List<BaseStat> Stats { get; set; }
 
+
 	void Start()
 	{
 		animator = GetComponent<Animator> ();
@@ -27,5 +28,8 @@ public class Sword : MonoBehaviour, IWeapon	{
             col.GetComponent<IEnemy>().TakeDamage(Stats[0].GetCalculatedStat());
 		}
 	}
+    public void CastProjectile()
+    {
 
+    }
 }
