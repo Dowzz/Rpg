@@ -1,6 +1,6 @@
 [
 	{
-		"ObjectSlug" : "sword",
+		"ObjectSlug" : "Sword",
 		"ItemName" : "Sword",
 		"Description" : "A long sharp blade",
 		"ItemType" : "Weapon",
@@ -18,7 +18,7 @@
 		]
 	},
 	{
-		"ObjectSlug" : "staff",
+		"ObjectSlug" : "Staff",
 		"ItemName" : "Staff",
 		"Description" : "A long plain staff",
 		"ItemType" : "Weapon",
@@ -55,7 +55,7 @@
 	},
 	{
 		"ObjectSlug" : "PotionHealth",
-		"ItemName" : "Health Potion",
+		"ItemName" : "PotionHealth",
 		"Description" : "a potion that give HP",
 		"ItemType" : "Consumable",
 		"actionName" : "Drink",

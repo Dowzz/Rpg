@@ -18,9 +18,9 @@ public class InventoryController : MonoBehaviour {
             Instance = this;
 		playerWeaponController = GetComponent<PlayerWeaponsController> ();
         consumablscontroller = GetComponent<ConsumablesController>();
-        GiveItem("sword");
+        GiveItem("Sword");
         GiveItem("PotionHealth");
-        GiveItem("staff");
+        GiveItem("Staff");
         GiveItem("Hammer");
 
 	}
