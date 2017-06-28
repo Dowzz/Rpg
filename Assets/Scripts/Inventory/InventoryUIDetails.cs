@@ -8,6 +8,8 @@ public class InventoryUIDetails : MonoBehaviour {
     Button selectedItemButton, itemInteractButton;
     Text itemNameText, itemDescriptionText, itemInteractButtonText;
 
+    public Text statText;
+
 
     void Start()
     {
@@ -21,6 +23,14 @@ public class InventoryUIDetails : MonoBehaviour {
     public void SetItem(Item item, Button SelectedButton )
     {
         gameObject.SetActive(true);
+        statText.text = "";
+        if (item.Stats !=null)
+        {
+            foreach (BaseStat stat in item.Stats)
+            {
+                statText.text += stat.StatName + ": " + stat.BaseValue + "\n";
+            }
+        }
         itemInteractButton.onClick.RemoveAllListeners();
         this.item = item;
         selectedItemButton = SelectedButton;

@@ -8,12 +8,20 @@
 		"ItemModifier" : 0,
 		"Stats" : [
 			{
+				"StatType" : "Power",
 				"baseValue" : 2,
-				"StatName" : "Power",
+				"StatName" : "Puissance",
 			},
 			{
-				"baseValue" : 4,
-				"StatName" : "vitality",
+				"StatType" : "Toughness",
+				"baseValue" : 1,
+				"StatName" : "Resistance",
+			},
+
+			{
+				"StatType" : "AttackSpeed",
+				"baseValue" : 3,
+				"StatName" : "Vitesse",
 			}
 		]
 	},
@@ -26,12 +34,19 @@
 		"ItemModifier" : 0,
 		"Stats" : [
 			{
-				"baseValue" : 2,
-				"StatName" : "Power",
+				"StatType" : "Power",
+				"baseValue" : 3,
+				"StatName" : "Puissance",
 			},
 			{
-				"baseValue" : 4,
-				"StatName" : "vitality",
+				"StatType" : "Toughness",
+				"baseValue" : 2,
+				"StatName" : "Resistance",
+			},
+					{
+				"StatType" : "AttackSpeed",
+				"baseValue" : 2,
+				"StatName" : "Vitesse",
 			}
 		]
 	},
@@ -44,12 +59,19 @@
 		"ItemModifier" : 0,
 		"Stats" : [
 			{
+				"StatType" : "Power",
 				"baseValue" : 5,
-				"StatName" : "Power",
+				"StatName" : "Puissance",
 			},
 			{
-				"baseValue" : 6,
-				"StatName" : "vitality",
+				"StatType" : "Toughness",
+				"baseValue" : 2,
+				"StatName" : "Resistance",
+			},
+					{
+				"StatType" : "AttackSpeed",
+				"baseValue" : 1,
+				"StatName" : "Vitesse",
 			}
 		]
 	},

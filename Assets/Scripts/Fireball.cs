@@ -11,7 +11,7 @@ public class Fireball : MonoBehaviour {
 
     void Start()
     {
-        Range = 20f;
+        Range = 10f;
         Damage = 4;
         spawnPostition = transform.position;
         GetComponent<Rigidbody>().AddForce(Direction * 50f);

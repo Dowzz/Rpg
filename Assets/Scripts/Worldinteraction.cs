@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Worldinteraction : MonoBehaviour {
     UnityEngine.AI.NavMeshAgent playerAgent;
+    private GameObject Target;
 	void Start ()
     {
         playerAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -12,9 +13,9 @@ public class Worldinteraction : MonoBehaviour {
 	void Update ()
     {
         if (Input.GetMouseButtonDown(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
-            GetInteraction();
-            
+            GetInteraction();       
 	}
+
 
     void GetInteraction()
     {
@@ -23,14 +24,29 @@ public class Worldinteraction : MonoBehaviour {
         if (Physics.Raycast(InteractionRay, out interactioninfo, Mathf.Infinity ))
         {
             playerAgent.updateRotation = true;
-            GameObject interactedObject = interactioninfo.collider.gameObject;
-            if (interactedObject.tag == "enemy")
+            Target = interactioninfo.collider.gameObject;
+
+            if (Target.tag == "Interactive")
             {
-                interactedObject.GetComponent<Interactive>().MoveToInteraction(playerAgent);
+                Target.GetComponent<Interactive>().MoveToInteraction(playerAgent);
             }
-            else if(interactedObject.tag == "Interactive")
+            else if (Target.tag == "Enemy")
+
             {
-                interactedObject.GetComponent<Interactive>().MoveToInteraction(playerAgent);
+                if (GetComponent<PlayerWeaponsController>().EquippedWeapon.GetComponent<IProjectileWeapon>()!= null)
+                {
+                    GetComponent<PlayerWeaponsController>().PerformWeaponAttack();
+                }
+                else if (Vector3.Distance(transform.position, Target.transform.position) <= 3f)
+                { 
+                    GetComponent<PlayerWeaponsController>().PerformWeaponAttack();
+                
+                }
+                else
+                {
+                    Target.GetComponent<Interactive>().MoveToInteraction(playerAgent);
+                }
+
             }
             else
             {
@@ -39,4 +55,5 @@ public class Worldinteraction : MonoBehaviour {
             }
         }
     }
+
 }

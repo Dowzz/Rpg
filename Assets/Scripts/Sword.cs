@@ -7,9 +7,10 @@ public class Sword : MonoBehaviour, IWeapon	{
 	private Animator animator;
 
 	public List<BaseStat> Stats { get; set; }
+    public CharacterStats CharacterStats { get; set; }
 
 
-	void Start()
+    void Start()
 	{
 		animator = GetComponent<Animator> ();
 	}
@@ -26,7 +27,7 @@ public class Sword : MonoBehaviour, IWeapon	{
 		if (col.tag == "Enemy")
 		{
             col.GetComponent<IEnemy>().TakeDamage(Stats[0].GetCalculatedStat());
-		}
+        }
 	}
     public void CastProjectile()
     {

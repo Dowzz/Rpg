@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Slime : MonoBehaviour, IEnemy {
+public class Slime : Interactive, IEnemy{
 	
-	public float currentHealth, power, toughness;
+	public float currentHealth;
 	public float maxHealth;
+
+    private CharacterStats characterStats;
 
 	void Start()
 	{
+        characterStats = new CharacterStats(6,10,2);
 		currentHealth = maxHealth;
 	}
 	public void PerformAttack ()
@@ -25,7 +28,8 @@ public class Slime : MonoBehaviour, IEnemy {
 		{
 		Destroy (gameObject); 	
 		}
-	}
+
+}
 
 
 		

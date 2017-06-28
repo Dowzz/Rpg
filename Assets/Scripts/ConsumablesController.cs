@@ -9,7 +9,7 @@ public class ConsumablesController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Stats = GetComponent<CharacterStats>();
+        Stats = GetComponent<Player>().characterStats;
 
     }
     public void ConsumeItem(Item item)
